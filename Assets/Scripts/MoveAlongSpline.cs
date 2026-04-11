@@ -7,12 +7,15 @@ using UnityEngine.InputSystem;
 public class MoveAlongSpline : MonoBehaviour
 {
     public SplineContainer spline;
-    public float accelerateValue = 0.01f;
-    public float brakeValue = 0.005f;
+    public float accelerateValue = 0.001f;
+    public float brakeValue = 0.0005f;
     public float speed;
     float distancePercentage = 0f;
 
     float splineLength;
+
+    public bool isInRoadTrigger;
+    public bool lawObeyed;
 
     private void Start()
     {
@@ -84,5 +87,42 @@ public class MoveAlongSpline : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, angle);
             }
         }
+
+        if ((speed < 0.5) && (isInRoadTrigger == true)) // if player speed = 0* while isInRoadTrigger = true, set lawObeyed to true
+        {
+            lawObeyed = true;
+        }
+
+        // if player leaves trigger box while isInRoadTrigger to true, do the following:
+        // if lawObeyed == true, set isInRoadTrigger to false
+        // if lawObeyed == false, end game
     }
+
+    public void OnTriggerEntered(GameObject hitObject) // check if player is in trigger box
+    {
+        Debug.Log("trigger entered");
+        isInRoadTrigger = true;
+    }
+
+    public void OnTriggerExited(GameObject hitObject)
+    {
+        Debug.Log("trigger left");
+        
+        if (isInRoadTrigger == true)
+        {
+            if (lawObeyed == true)
+            {
+                Debug.Log("law obeyed!");
+                isInRoadTrigger = false;
+                lawObeyed = false;
+            }
+            else if (lawObeyed == false)
+            {
+                Debug.Log("law BROKEN!");
+                // TRIGGER END OF THE GAME HERE!!!
+                isInRoadTrigger = false;
+            }
+        }
+    }
+    
 }

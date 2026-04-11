@@ -92,37 +92,45 @@ public class MoveAlongSpline : MonoBehaviour
         {
             lawObeyed = true;
         }
-
-        // if player leaves trigger box while isInRoadTrigger to true, do the following:
-        // if lawObeyed == true, set isInRoadTrigger to false
-        // if lawObeyed == false, end game
     }
 
-    public void OnTriggerEntered(GameObject hitObject) // check if player is in trigger box
+    public void OnStopSignTriggerEntered(GameObject hitObject) // check if player is in trigger box
     {
         Debug.Log("trigger entered");
         isInRoadTrigger = true;
     }
 
-    public void OnTriggerExited(GameObject hitObject)
+    public void OnStopSignTriggerExited(GameObject hitObject) // if player leaves trigger box while isInRoadTrigger to true, do the following:
     {
         Debug.Log("trigger left");
         
         if (isInRoadTrigger == true)
         {
-            if (lawObeyed == true)
+            if (lawObeyed == true) // if lawObeyed == true, set isInRoadTrigger to false
             {
                 Debug.Log("law obeyed!");
                 isInRoadTrigger = false;
                 lawObeyed = false;
             }
-            else if (lawObeyed == false)
+            else if (lawObeyed == false) // if lawObeyed == false, end game
             {
                 Debug.Log("law BROKEN!");
                 // TRIGGER END OF THE GAME HERE!!!
                 isInRoadTrigger = false;
             }
         }
+    }
+
+    public void OnTrafficLightTriggerEntered(GameObject hitObject) // check if player is in trigger box
+    {
+        Debug.Log("trigger entered");
+        isInRoadTrigger = true;
+    }
+
+    public void OnTrafficLightTriggerExited(GameObject hitObject) // check if player is in trigger box
+    {
+        Debug.Log("trigger entered");
+        isInRoadTrigger = true;
     }
     
 }

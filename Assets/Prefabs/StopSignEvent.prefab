@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 6182843375402241525}
   m_Layer: 0
   m_Name: Stop Sign Detector
-  m_TagString: RoadTrigger
+  m_TagString: StopSign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 6721283913931506531}
   m_Layer: 0
   m_Name: StopSignEvent
-  m_TagString: RoadTrigger
+  m_TagString: StopSign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

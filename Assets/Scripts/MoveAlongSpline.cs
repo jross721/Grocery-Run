@@ -12,20 +12,6 @@ public class MoveAlongSpline : MonoBehaviour
 
     float splineLength;
 
-    public InputActionReference accelerate;
-
-    private void OnEnable()
-    {
-        // 2. You must enable the action for it to work!
-        accelerate.action.Enable();
-    }
-
-    private void OnDisable()
-    {
-        // 3. Clean up by disabling it when this object is gone
-        accelerate.action.Disable();
-    }
-
     private void Start()
     {
         splineLength = spline.CalculateLength();
@@ -34,8 +20,10 @@ public class MoveAlongSpline : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (accelerate.action.IsPressed())
+        if ((Input.GetKey(KeyCode.W)))
         {
+            Debug.Log("BUTTON HELD");
+
             var splinePos = spline.EvaluatePosition(distancePercentage);
         
             Vector2 currentPosition = new Vector2(splinePos.x, splinePos.y);
@@ -48,7 +36,7 @@ public class MoveAlongSpline : MonoBehaviour
                 distancePercentage = 0f;
             }
 
-            var nextSplinePos = spline.EvaluatePosition(distancePercentage + 0.01f);
+            var nextSplinePos = spline.EvaluatePosition(distancePercentage + 0.001f);
             Vector2 nextPosition = new Vector2(nextSplinePos.x, nextSplinePos.y);
             
             Vector2 direction = nextPosition - currentPosition;
@@ -59,6 +47,5 @@ public class MoveAlongSpline : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, angle);
             }
         }
-        
     }
 }

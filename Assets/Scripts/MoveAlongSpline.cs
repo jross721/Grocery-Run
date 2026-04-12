@@ -99,7 +99,7 @@ public class MoveAlongSpline : MonoBehaviour
         Debug.Log("trigger entered");
         isInRoadTrigger = true;
     }
-
+    private bool stopped = false;
     public void OnStopSignTriggerExited(GameObject hitObject) // if player leaves trigger box while isInRoadTrigger to true, do the following:
     {
         Debug.Log("trigger left");
@@ -115,7 +115,8 @@ public class MoveAlongSpline : MonoBehaviour
             else if (lawObeyed == false) // if lawObeyed == false, end game
             {
                 Debug.Log("law BROKEN!");
-                // TRIGGER END OF THE GAME HERE!!!
+                stopped = true;
+                Losemanager.manager.Lose();
                 isInRoadTrigger = false;
             }
         }

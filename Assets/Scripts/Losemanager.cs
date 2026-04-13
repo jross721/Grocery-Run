@@ -27,4 +27,10 @@ public class Losemanager : MonoBehaviour
         loseScreen.SetActive(true);
         Time.timeScale = 0f;
     }
+    public void ReplayGame()
+    {
+        Time.timeScale = 1f;
+        isGameOver = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

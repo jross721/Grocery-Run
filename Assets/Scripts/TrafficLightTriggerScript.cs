@@ -1,28 +1,68 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class TrafficLightTriggerScript : MonoBehaviour
 {
-    [SerializeField] private MoveAlongSpline playerCar; 
+    [Header("Settings")]
+    public float minWait = 2f;
+    public float maxWait = 5f;
+    public float uiLingerTime = 2f;
+
+    [Header("References")]
+    public GameObject trafficLightSprite;
+    public GameObject redLightSprite;
+    public GameObject greenLightSprite;
+
+    private bool isCoroutineRunning = false;
+    private bool isRedLightActive = true;
+
+    void Start()
+    {
+        if (trafficLightSprite != null) trafficLightSprite.SetActive(false);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("TrafficLight"))
         {
-            playerCar.OnTrafficLightTriggerEntered(other.gameObject);
+            if (!isCoroutineRunning)
+            {
+                Debug.Log("traffic light coroutine started!)");
+                StartCoroutine(StartTrafficLight());
+            }
         }
-    }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("TrafficLight"))
+        if (other.CompareTag("TrafficLight2"))
         {
-            playerCar.OnTrafficLightTriggerExited(other.gameObject);
+            if (isRedLightActive)
+            {
+                Debug.Log("LAW BROKEN!");
+                // CALL LOSE SCRIPT
+            }
         }
     }
 
-    // when player enters range of light, pick random number from range
-    // start timer
-    // when timer raches random number, set isGreenLight to true
-    
-    // if player leaves range of light
+    private IEnumerator StartTrafficLight()
+    {
+        isCoroutineRunning = true;
+        
+        if (trafficLightSprite != null) trafficLightSprite.SetActive(true);
+        if (redLightSprite != null) redLightSprite.SetActive(true);
+        if (greenLightSprite != null) greenLightSprite.SetActive(false);
+
+        float waitTime = Random.Range(minWait, maxWait);
+        Debug.Log("Red Light Active!");
+        yield return new WaitForSeconds(waitTime);
+
+        isRedLightActive = false;
+        Debug.Log("Green Light Active!");
+
+        yield return new WaitForSeconds(uiLingerTime);
+        if (trafficLightSprite != null) trafficLightSprite.SetActive(false);
+        if (redLightSprite != null) redLightSprite.SetActive(false);
+        if (greenLightSprite != null) greenLightSprite.SetActive(true);
+        
+        isCoroutineRunning = false;
+    }
 }

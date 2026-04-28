@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 648bd576410b59c4a8567e628df581a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1244376005849431734
+    second: speedometerNEW_0
+  - first:
+      213: -2646086566700354209
+    second: speedometerNEW_1
+  - first:
+      213: 1406052109017460612
+    second: speedometerNEW_2
+  - first:
+      213: 8105969086126492653
+    second: speedometerNEW_3
+  - first:
+      213: 3523640611474493739
+    second: speedometerNEW_4
+  - first:
+      213: 8813093624126699325
+    second: speedometerNEW_5
+  - first:
+      213: 2160361088557758472
+    second: speedometerNEW_6
+  - first:
+      213: -2252749930258876821
+    second: speedometerNEW_7
+  - first:
+      213: -4146407007690427527
+    second: speedometerNEW_8
+  - first:
+      213: -6811659754774620235
+    second: speedometerNEW_9
+  - first:
+      213: 9112107304410939952
+    second: speedometerNEW_10
+  - first:
+      213: -5431315189353475185
+    second: speedometerNEW_11
+  - first:
+      213: -3110022758409462991
+    second: speedometerNEW_12
+  - first:
+      213: 3441766480475631312
+    second: speedometerNEW_13
+  - first:
+      213: -1902620429308791084
+    second: speedometerNEW_14
+  - first:
+      213: -727656202558980293
+    second: speedometerNEW_15
+  - first:
+      213: -6547597186765697190
+    second: speedometerNEW_16
+  - first:
+      213: -6217703732448883122
+    second: speedometerNEW_17
+  - first:
+      213: 3355714329201247543
+    second: speedometerNEW_18
+  - first:
+      213: 8185241391231270327
+    second: speedometerNEW_19
+  - first:
+      213: -6388178891995131620
+    second: speedometerNEW_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: speedometerNEW_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bebca36269e44110800000000000000
+      internalID: 1244376005849431734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 208
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5574e28946374bd0800000000000000
+      internalID: -2646086566700354209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 97
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48facad81fc438310800000000000000
+      internalID: 1406052109017460612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 190
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb0ed2cfef2e7070800000000000000
+      internalID: 8105969086126492653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21d313977c76e030800000000000000
+      internalID: 3523640611474493739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 53
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37f45615f56e4a70800000000000000
+      internalID: 8813093624126699325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_6
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 88
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808bf06c6f42bfd10800000000000000
+      internalID: 2160361088557758472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_7
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 88
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66322fbfdf9cb0e0800000000000000
+      internalID: -2252749930258876821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 75
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973fb6c8bc00576c0800000000000000
+      internalID: -4146407007690427527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_9
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 86
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b795d1fa8f1871a0800000000000000
+      internalID: -6811659754774620235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 53
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03208aab055b47e70800000000000000
+      internalID: 9112107304410939952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_11
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 86
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8317639c9710a4b0800000000000000
+      internalID: -5431315189353475185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_12
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 91
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b9f9167caf6d4d0800000000000000
+      internalID: -3110022758409462991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 47
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dea894f06c93cf20800000000000000
+      internalID: 3441766480475631312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 49
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6f5a0dcc88895e0800000000000000
+      internalID: -1902620429308791084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 29
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3fbcdff988d6e5f0800000000000000
+      internalID: -727656202558980293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_16
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 24
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fcb7e9c034225a0800000000000000
+      internalID: -6547597186765697190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_17
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 18
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e83cce56746b9a0800000000000000
+      internalID: -6217703732448883122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_18
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 18
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7358abf2764e19e20800000000000000
+      internalID: 3355714329201247543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_19
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 18
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdf9259da1d79170800000000000000
+      internalID: 8185241391231270327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speedometerNEW_20
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 14
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c115bfcc421a857a0800000000000000
+      internalID: -6388178891995131620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      speedometerNEW_0: 1244376005849431734
+      speedometerNEW_1: -2646086566700354209
+      speedometerNEW_10: 9112107304410939952
+      speedometerNEW_11: -5431315189353475185
+      speedometerNEW_12: -3110022758409462991
+      speedometerNEW_13: 3441766480475631312
+      speedometerNEW_14: -1902620429308791084
+      speedometerNEW_15: -727656202558980293
+      speedometerNEW_16: -6547597186765697190
+      speedometerNEW_17: -6217703732448883122
+      speedometerNEW_18: 3355714329201247543
+      speedometerNEW_19: 8185241391231270327
+      speedometerNEW_2: 1406052109017460612
+      speedometerNEW_20: -6388178891995131620
+      speedometerNEW_3: 8105969086126492653
+      speedometerNEW_4: 3523640611474493739
+      speedometerNEW_5: 8813093624126699325
+      speedometerNEW_6: 2160361088557758472
+      speedometerNEW_7: -2252749930258876821
+      speedometerNEW_8: -4146407007690427527
+      speedometerNEW_9: -6811659754774620235
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

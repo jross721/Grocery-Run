@@ -18,7 +18,6 @@ public class Losemanager : MonoBehaviour
         loseScreen.SetActive(false);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
     public void Lose()
     
@@ -29,7 +28,6 @@ public class Losemanager : MonoBehaviour
         loseScreen.SetActive(true);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = false;
         
     }
     public void MainMenu()
@@ -39,12 +37,10 @@ public class Losemanager : MonoBehaviour
 
         SceneManager.LoadScene("MainMenu");
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = false;
     }
     public void ReplayGame()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
         Time.timeScale = 1f;
         isGameOver = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -52,7 +48,6 @@ public class Losemanager : MonoBehaviour
     public void QuitGame()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
         Time.timeScale = 1f;
         isGameOver = false;
         Application.Quit();

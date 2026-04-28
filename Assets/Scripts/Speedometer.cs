@@ -7,40 +7,26 @@ public class Speedometer : MonoBehaviour
     private const float ZERO_SPEED_ANGLE = 210;
 
     [SerializeField] private Transform needleTransform;
-    private float speedMax;
-    private float speed;
-    private void Awake()
-    {
-        speed = 0f;
-        speedMax = 120f;
-    }
+    [SerializeField] private MoveAlongSpline splineMovement;
+    [SerializeField] private float speedMax = 100f;
+    [SerializeField] private float rotationOffset = 0f;
+    
     private void Update()
     {
-        HandlePlayerInput();
-        if (speed > speedMax) speed = speedMax;
-        needleTransform.eulerAngles = new Vector3(0, 0, GetSpeedRotation());
-
-    }
-    private void HandlePlayerInput()
-    {
-        if(Input.GetKey(KeyCode.W))
+        if (splineMovement != null && needleTransform != null)
         {
-            float acceleration = 50f;
-            speed += acceleration * Time.deltaTime;
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            float brakeSpeed = 100f;
-            speed -= brakeSpeed * Time.deltaTime;
+            float currentSpeed = splineMovement.speed;
+            float targetRotation = GetSpeedRotation(currentSpeed) + rotationOffset;
+            needleTransform.eulerAngles = new Vector3(0, 0, targetRotation);
         }
     }
-    private float GetSpeedRotation()
+
+    private float GetSpeedRotation(float currentSpeed)
     {
+        float clampedSpeed = Mathf.Clamp(currentSpeed, 0f, speedMax);
         float totalAngleSize = ZERO_SPEED_ANGLE - MAX_SPEED_ANGLE;
-        float speedNormalized = speed / speedMax;
-        return ZERO_SPEED_ANGLE - speedNormalized * totalAngleSize;
-
+        float speedNormalized = clampedSpeed / speedMax;
+        return ZERO_SPEED_ANGLE - (speedNormalized * totalAngleSize);
     }
 
 }

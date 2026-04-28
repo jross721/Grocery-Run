@@ -57,11 +57,11 @@ public class TrafficLightTriggerScript : MonoBehaviour
 
         isRedLightActive = false;
         Debug.Log("Green Light Active!");
+        if (redLightSprite != null) redLightSprite.SetActive(false);
+        if (greenLightSprite != null) greenLightSprite.SetActive(true);
 
         yield return new WaitForSeconds(uiLingerTime);
         if (trafficLightSprite != null) trafficLightSprite.SetActive(false);
-        if (redLightSprite != null) redLightSprite.SetActive(false);
-        if (greenLightSprite != null) greenLightSprite.SetActive(true);
         
         isCoroutineRunning = false;
     }

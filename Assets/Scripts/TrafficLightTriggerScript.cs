@@ -17,6 +17,8 @@ public class TrafficLightTriggerScript : MonoBehaviour
     private bool isCoroutineRunning = false;
     private bool isRedLightActive = true;
 
+    public MoveAlongSpline moveAlongSplineScript;
+
     void Start()
     {
         if (trafficLightSprite != null) trafficLightSprite.SetActive(false);
@@ -38,7 +40,7 @@ public class TrafficLightTriggerScript : MonoBehaviour
             if (isRedLightActive)
             {
                 Debug.Log("LAW BROKEN!");
-                // CALL LOSE SCRIPT
+                moveAlongSplineScript.Lose();
             }
         }
     }

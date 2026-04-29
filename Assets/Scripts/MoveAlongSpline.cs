@@ -7,9 +7,10 @@ using UnityEngine.InputSystem;
 public class MoveAlongSpline : MonoBehaviour
 {
     public SplineContainer spline;
-    public float accelerateValue = 0.001f;
+    public float accelerateValue = 0.0001f;
     public float brakeValue = 0.0005f;
     public float speed;
+    public float maxSpeed = 5;
     float distancePercentage = 0f;
 
     float splineLength;
@@ -27,6 +28,7 @@ public class MoveAlongSpline : MonoBehaviour
     {
         if ((Input.GetKey(KeyCode.W)))
         {
+            if (speed <= maxSpeed)
             speed = speed + accelerateValue;
         }
         else if ((Input.GetKey(KeyCode.S)) && (speed > 0))
@@ -116,7 +118,8 @@ public class MoveAlongSpline : MonoBehaviour
             {
                 Debug.Log("law BROKEN!");
                 stopped = true;
-                Losemanager.manager.Lose();
+                //Losemanager.manager.Lose();
+                Lose();
                 isInRoadTrigger = false;
             }
         }
@@ -132,6 +135,14 @@ public class MoveAlongSpline : MonoBehaviour
     {
         Debug.Log("trigger entered");
         isInRoadTrigger = true;
+    }
+
+    public void Lose()
+    {
+        if (Losemanager.manager != null) 
+        {
+            Losemanager.manager.Lose();
+        }
     }
     
 }
